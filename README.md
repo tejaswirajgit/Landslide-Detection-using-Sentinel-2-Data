@@ -1,49 +1,26 @@
-Landslide Detection using Sentinel-2 Data
+# Landslide Detection using Deep learning Algorithm
 
-Overview
-
+# Overview
 This project implements a deep learning-based approach for landslide detection using Sentinel-2 multispectral data. It utilizes advanced segmentation models like U-Net, SegNet, and DeepLabV3+ to identify landslide-prone areas from satellite images. The pipeline includes preprocessing, model training, validation, and evaluation, integrating multiple features like RGB bands, NDVI, slope, and DEM for enhanced accuracy.
 
-Features
+# Features
 
 Preprocessing: Includes normalization, NDVI calculation, and feature extraction.
-
 Deep Learning Models: Supports U-Net, SegNet, and DeepLabV3+ for segmentation tasks.
-
 Metrics: Precision, recall, and F1 score for evaluating model performance.
-
 Flexible Data Handling: Handles Sentinel-2 multispectral data with features like slope and DEM.
 
-Dataset
-
+# Dataset
 The project uses Sentinel-2 satellite images with 14 bands, including RGB, NDVI, slope, and DEM. The training data is preprocessed into a shape of (128, 128, 6).
 
-Data Source
-
+# Data Source
 The dataset used in this project is available on Zenodo: https://zenodo.org/records/10463239
 
-Data Preprocessing
 
-Normalization: RGB bands, slope, and DEM are normalized.
 
-NDVI Calculation:
-
-Formula: NDVI = (NIR - Red) / (NIR + Red)
-
-Final Features: RGB bands, NDVI, slope, and DEM are combined for training.
-
-Data Shapes
-
-Training data: x_train.shape = (3039, 128, 128, 6)
-
-Labels: y_train.shape = (3039, 128, 128, 1)
-
-Model Architecture
+# Model Architecture
 
 The repository includes implementations of:
-
 U-Net: A popular encoder-decoder architecture for image segmentation.
-
 SegNet: Known for its efficient upsampling and segmentation capabilities.
-
 DeepLabV3+: Leverages atrous convolutions for capturing multi-scale context.
