@@ -10,9 +10,6 @@ Deep Learning Models: Supports U-Net, SegNet, and DeepLabV3+ for segmentation ta
 Metrics: Precision, recall, and F1 score for evaluating model performance.
 Flexible Data Handling: Handles Sentinel-2 multispectral data with features like slope and DEM.
 
-# Dataset
-The project uses Sentinel-2 satellite images with 14 bands, including RGB, NDVI, slope, and DEM. The training data is preprocessed into a shape of (128, 128, 6).
-
 # Data Source
 The dataset used in this project is available on Zenodo: https://zenodo.org/records/10463239
 
@@ -21,6 +18,9 @@ The dataset used in this project is available on Zenodo: https://zenodo.org/reco
 # Model Architecture
 
 The repository includes implementations of:
+
 U-Net: A popular encoder-decoder architecture for image segmentation.
+
 SegNet: Known for its efficient upsampling and segmentation capabilities.
+
 DeepLabV3+: Leverages atrous convolutions for capturing multi-scale context.
